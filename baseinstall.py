@@ -47,5 +47,3 @@ os.system("arch-chroot /mnt pacman -Sy grub")
 os.system("arch-chroot /mnt grub-install --target=i386-pc --recheck " + device)
 os.system("arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg")
  
-# Set up the root password
-os.system("arch-chroot /mnt sh -c 'echo -n \"root:" + password +
