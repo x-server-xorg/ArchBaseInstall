@@ -1,5 +1,5 @@
 import os
- import time
+import time
 # Set up variables for the installation
 hostname = "arch"
 username = "user"
@@ -8,7 +8,7 @@ device = "/dev/sda"
 print("user - user ")
 print("password - 123 ")
 
- time.sleep(5)
+time.sleep(5)
 # Prepare the disk
 os.system("sgdisk -Z " + device)
 os.system("parted " + device + " -- mklabel gpt")
